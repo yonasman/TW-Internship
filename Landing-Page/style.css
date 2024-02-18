@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+/* *:hover {
+    cursor:n-resize ;
+} */
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(81, 206, 237);
+    height: 10vh;
+    box-shadow: 0 0 8px 4px;
+}
+.nav_container div {
+    display: flex;
+    padding-top: 15px;
+}
+.nav_right ul{
+    width:50vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.nav_container div ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav_container div ul li {
+    list-style: none;
+}
+.nav_container div ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav_left img {
+    width: 10vw;
+}
+.nav_signin {
+    padding: 3px 15px;
+    background-color: #000;
+    border-radius: 15px;
+    color: #fff;
+}
+/* .nav_signin:hover {
+    background-color: #fff;
+    color:#000;
+} */
+
+@media screen and (max-width:768px) {
+    .nav_right ul {
+        width: 80vw;
+    }
+    .nav_left img {
+        width: 20vw;
+    }
+} 
+/* ******************************* */
+.display_one {
+    background-image: url(./images/procart2.jpg);
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: start;
+    background-size: cover;
+    width: 100%;
+    color: #000000;
+    display: flex;
+}
+
+.display_text {
+    padding: 14rem 6rem;
+    width: 100%;
+}
+.display_one h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.display_one  button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    
+}
+.display_one  button:hover {
+    /* outline: 3px solid rgb(255, 136, 0); */
+    box-shadow: 0 0 7px 3px;
+}
+.display_one div img {
+    width: 65%;
+    padding-top: 4rem;
+    padding-left: 4rem;
+}
