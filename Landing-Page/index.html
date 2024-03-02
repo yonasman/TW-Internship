@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Havan Collections</title>
-    <!--google roboto font -->
+    <!--google poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- eb garamond font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- link to bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- link to font awesome fonts -->
@@ -21,7 +25,7 @@
         <div class="nav_container">
             <div class="nav_left">
                 <ul>
-                    <li><a href="#"><img src="./images/ha_logo-removebg-preview.png"></a></li>
+                    <li><a href="#"><img>LOGO<img/></a></li>
                 </ul>
             </div>
             <div class="nav_right">
@@ -39,36 +43,92 @@
     <section>
         <div class="display_one">
                 <div class="display_text">
-                <h1>PRODUCTS WE OFFER</h1>
+                <p>Welcome to</p>
+                <h1>Havan Collections</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus natus iure doloremque nostrum voluptate,<br/> consequuntur eaque labore tenetur
                 aperiam rem excepturi beatae numquam, eum eius molestiae esse magni laborum mollitia!</p>
                 <button>Get Started</button>
                 </div>
-                <div>
-                    <img src="./images/headset.png">
+                <div class="headset_container">
+                    <img id="headset" src="./images/headset.png">
                 </div>
         </div>
         
     </section>
     <!-- display 2 -->
-    <section class="display_two_wrapper">
+    <section class="display_two_container">
+        <div class="display_two_wrapper">
+           <div>
+            <p>Fast Delivery</p>
+            <img src="./images/Fast-delivery.png" alt="fast delivery image">
+            <p>Lorem ipsum dolor sit amet consecteture</p>
+           </div>
+           <div>
+            <p>Quality Product</p>
+            <img src="./images/quality pro.png" alt="quality product image">
+            <p>Lorem ipsum dolor sit amet consecteture</p>
+           </div>
+           <div>
+            <p>Best Price</p>
+            <img src="./images/best-price 2.png" alt="best price image">
+            <p>Lorem ipsum dolor sit amet consecteture</p>
+           </div>
+           <div>
+            <p>Quick Repair</p>
+            <img src="./images/quick repair.png" alt="repair image">
+            <p>Lorem ipsum dolor sit amet consecteture</p>
+           </div>
+        </div>
+    </section>
+    <!-- display 3 -->
+    <section class="display_three_wrapper">
         <h2>Products</h2>
-        <div class="display_two_container">
+        <div class="display_three_container">
             <div>
-                <a href="#"><img src="./images/gadgets.png"></a>
-                <h2>Electronics</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam.</p>
+            <div class="flipper">
+                <div class="front">
+                    <a href="#"><img src="./images/gadgets.png"></a>
+                    <h2>Electronics</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam.</p>
+                </div>
+                <div class="back">
+                    <a href="#"><img src="./images/gadgets.png"></a>
+                    <h2>Medicines</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam.</p>
+                </div>
             </div>
+        </div>
+            <!-- div two -->
             <div>
-                <a href="#"><img src="./images/shoes.png"></a>
-                <h2>Shoes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam.</p>
+            <div class="flipper">
+                <div class="front">
+                    <a href="#"><img src="./images/shoes.png"></a>
+                    <h2>Shoes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam.</p>
+                </div>
+                <div class="back">
+                    <a href="#"><img src="./images/shoes.png"></a>
+                    <h2>Stationery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam.</p>
+                </div>
             </div>
+            </div>
+            <!-- div three -->
             <div>
+            <div class="flipper">
+             <div class="front">
                 <a href="#"><img src="./images/fashion.png"></a>
-                <h2>Clothes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam.</p>
+                  <h2>Clothes</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam.</p>
             </div>
+            <div class="back">
+                <a href="#"><img src="./images/fashion.png"></a>
+                  <h2>Cosmotics</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis numquam.</p>
+            </div>
+        </div>
+        </div>
+         </div>
         </div>
     </section>
     <!-- footer section -->
@@ -76,7 +136,7 @@
 
         <div class="footer_wrapper">
             <div>
-                <a><img src="./images/ha_logo-removebg-preview.png"></a>
+                <a><img >LOGO</a>
                 <h1>Havan Collections</h1>
             </div>
             <div>
@@ -129,5 +189,6 @@
         </div>
     </div>
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>
