@@ -49,10 +49,10 @@ img {
 }
 .nav_signin {
     padding: 6px 16px;
-    background-color: #c06006;
+    background-color: #ea7029;
     border-radius: 14px;
-    color: #fff;
 }
+
 .nav_signin:hover {
     background-color: #28d5fc;
     color:#000;
@@ -68,7 +68,7 @@ img {
     width: 100%;
     color: #000;
     display: flex;
-    margin-top: 40px;
+    margin-top: 63px;
 }
 
 .display_text {
@@ -291,6 +291,42 @@ h5 {
     background-color: #b0a6a6;
 }
 /* media query */
+@media screen and (max-width:1020px) {
+    .display_text p {
+        font-size: 1.1rem;
+    }
+    .display_text {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .display_text h1 {
+        font-size: 1.7rem;
+    }
+    .display_two_container div {
+        width: 50vw;
+    }
+    .footer_container {
+        height: 55vh;
+    }
+    .display_three_container div{
+        width: 30vw;
+    }
+    .headset_container {
+        width: 40vw;
+    }
+    #headset {
+        padding-top: 5rem;
+    }
+    .display_one button {
+        margin-left: 17rem;
+        /* margin-bottom: 100vh; */
+    }
+    .display_one p:first-child {
+        font-size: 1.6rem;
+        margin-left: 3.5rem;
+    }
+
+}
 @media screen and (max-width:768px) {
     .nav_right ul {
         width: 80vw;
@@ -304,26 +340,39 @@ h5 {
         text-align: center;
     }
     .display_text p:first-child {
-        padding-left: 1.1rem;
+        margin-left: 2.9rem;
     }
     .display_text p {
         font-size: 1rem;
     }
     .display_text {
-        width: 110vw;
+        width: 150vw;
+        margin-left: 3rem;
+        padding-top: 10px;
     }
     .display_one div img {
         display: none;
     }
+    .display_one button {
+        margin-left: 0;
+    }
     .display_two_container {
-        height: 180vh;
+        height: 200vh;
     }
 
     .display_two_container div  {
         display: block;
         margin-top: 2rem;
         align-items: center;
-        margin-left: 3.7rem;
+        height: 40vh;
+        width: 40vh;
+        padding-top: 2rem;
+    }
+    .display_two_container div p:not(:first-child) {
+        padding-left: 2.4rem;
+    }
+    .display_two_container div img {
+        padding-left: 1.5rem;
     }
     .display_three_wrapper {
         height: 220vh;
@@ -362,39 +411,3 @@ h5 {
         width: 28vw;
     }
 } 
-@media screen and (max-width:1020px) {
-    .display_text p {
-        font-size: 1.1rem;
-    }
-    .display_text {
-        margin-top: 0px;
-        width: 100%;
-    }
-    .display_text h1 {
-        font-size: 1.7rem;
-    }
-    .display_two_container div {
-        width: 50vw;
-    }
-    .footer_container {
-        height: 55vh;
-    }
-    .display_three_container div{
-        width: 30vw;
-    }
-    .headset_container {
-        width: 40vw;
-    }
-    #headset {
-        padding-top: 5rem;
-    }
-    .display_one button {
-        margin-left: 17rem;
-        /* margin-bottom: 100vh; */
-    }
-    .display_one p:first-child {
-        font-size: 1.6rem;
-        margin-left: 3.5rem;
-    }
-
-}
