@@ -1,4 +1,23 @@
+// navigation bar styling
+let sections = document.querySelectorAll('section')
+let navLinks = document.querySelectorAll('nav ul a')
+// console.log(navLinks)
 
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id')
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('nav ul a[href *=' + id + ']').classList.add('active')
+                // console.log(a)
+            })
+        }
+    })
+}
 // typewriter functionality
 class Typewriter {
     constructor(elem,options) {
@@ -79,3 +98,49 @@ form.addEventListener("submit",async (e) => {
         console.error('Error posting message:', error.message);
     }
 })
+
+
+// revealing elements on scroll
+window.addEventListener('scroll',reveal);
+function reveal() {
+    let reveals = document.querySelectorAll(".reveal")
+    // console.log(reveals)
+    for (let i = 0;i <reveals.length;i++) {
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 150;
+        if(revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active')
+        } else {
+            reveals[i].classList.remove('active')
+        }
+    }
+}
+// menu toggler
+let menu = document.querySelector(".hamburger_display");
+// console.log(menu)
+let hamburger = document.querySelector("#hamburgerIcon");
+hamburger.addEventListener("click", function toggler() {
+    menu.classList.toggle("visible")
+    let isVisible = menu.classList.contains("visible")
+    if(isVisible) {
+        hamburger.src = "./images/hamburger.png";
+    } else {
+        hamburger.src = "./images/cross.png";
+    }
+})
+
+// alert script
+// form.addEventListener("submit",function showCustomAlert() {
+//     // Get the custom alert container
+//     var alertContainer = document.getElementById("custom-alert-container");
+
+//     // Change the text and style of the custom alert
+//     alertContainer.textContent = "This is a custom alert!";
+//     alertContainer.style.display = "block";
+
+//     // Automatically hide the alert after a certain period (e.g., 3 seconds)
+//     setTimeout(function() {
+//         alertContainer.style.display = "none";
+//     }, 100000);
+// })

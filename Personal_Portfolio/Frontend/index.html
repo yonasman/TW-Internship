@@ -3,12 +3,12 @@
 <header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yonas Negese's Portfolio</title>
+    <title>My Portfolio</title>
     <!-- custom css -->
     <link rel="stylesheet" href="style.css">
     <!-- favicon -->
-    <link rel="short icon" href="./images/letter-y.png" />
-    <!-- poppins font -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <!-- poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,51 +18,79 @@
 
 <body>
     <!-- navigation bar -->
-    <section class="nav_container">
+    <nav class="nav_container">
         <div>
             <a href="#"><img src="./images/logo.png"></a>
         </div>
         <div class="top_links_wrapper">
             <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Services</li></a>
-                <a href="#"><li>Projects</li></a>
-                <a href="#"><li>Skills</li></a>
-                <a href="#"><li>Certifications</li></a>
-                <a href="#"><li>About</li></a>
+                <a href="#" class="active">
+                    <li>Home</li>
+                </a>
+                <a href="#services">
+                    <li>Services</li>
+                </a>
+                <a href="#projects">
+                    <li>Projects</li>
+                </a>
+                <a href="#skills">
+                    <li>Skills</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
             </ul>
         </div>
         <div class="contact_wrapper">
-            <a href="#">
+            <a href="#contact">
                 <P>Contact Me</P>
             </a>
         </div>
-    </section>
+        <div class="hamburger_menu">
+            <a><img id="hamburgerIcon" src="./images/hamburger.png"></a>
+        </div>
+    </nav>
     <!-- self introduction section -->
-    <section class="photo_container">
+    <section class="photo_container" id="about">
         <div>
+            <div class="hamburger_display visible">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>    
+            </div>
             <div class="photo_wrapper">
-                <div class="photo_link_container">
+                <div class="photo_link_container reveal active">
                     <img src="./images/newyyy.png">
                     <div class="photo_links">
                         <a href="https://github.com/yonasman" target="_blank"><img src="./images/github2.png"></a>
-                        <a href="https://www.linkedin.com/in/yonas-negese" target="_blank"><img src="./images/linkedin-logo.png"></a>
+                        <a href="https://www.linkedin.com/in/yonas-negese" target="_blank"><img
+                                src="./images/toplinkedin.png"></a>
                     </div>
                 </div>
                 <div class="photo_button">
                     <a href="#">Resume</a>
                     <a href="#">Hire Me</a>
-                </div> 
+                </div>
             </div>
-                <p
-                    class="type_container" data-typewriter="Hello I am Yonas Negese M, I am a Junior Mern-Stack developer, Software Engineer, Graphics Designer, Computer science and Data Analytics student.">
-                </p>
+            <p class="type_container"
+                data-typewriter="Hello I am Yonas Negese M, I am a Junior Mern-Stack developer, Software Engineer, Graphics Designer, Computer science and Data Analytics student.">
+            </p>
         </div>
     </section>
+    <!-- custom alert box -->
+    <!-- <section>
+        <div id="custom-alert-container">
+
+        </div>
+    </section> -->
     <!-- services section -->
-    <section class="services_container">
-        <h1>My Services.</h1>
-        <div class="services_wrapper">
+    <section class="services_container" id="services">
+        <h1>My Services</h1>
+        <div class="services_wrapper reveal active">
             <div class="item">
                 <p>Web Development</p>
                 <img src="./images/webdev.png">
@@ -74,7 +102,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, eveniet.</p>
             </div>
             <div class="item">
-                <p>Wordpress</p>
+                <p>WordPress</p>
                 <img src="./images/wordpress.png">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, eveniet.</p>
             </div>
@@ -111,22 +139,21 @@
         </div>
     </section>
     <!-- projects section -->
-    <section class="projects_container">
-        <h1>My Latest Projects.</h1>
-        <div class="project_cont2">
+    <section class="projects_container" id="projects">
+        <h1>My Latest Projects</h1>
+        <div class="project_cont2 reveal active">
             <div class="project_wrapper">
                 <div>
-                    <h2>Project Title: Apple Responsive Replica</h2>
+                    <h2>Project Title: Apple Responsive</h2>
                     <h3>Description:</h3>
                     <p>
-                        For this project, I aimed to replicate the design and layout of the Apple website using HTML,
-                        CSS,
-                        and Bootstrap. The goal was to create a responsive website that looks similar to the
+                        For this project, I aimed to replicate the design and layout of the Apple website. The goal was to create a responsive website that looks similar to the
                         official Apple website.</p>
                     <a class="live_demo" href="#">Live Demo</a><img class="next" src="./images/next.png">
+                    <a class="live_demo" href="#">Code</a><img class="next" src="./images/next.png">
                 </div>
                 <div>
-                    <a href="#"><img src="./images/neapple.png"></a>
+                    <a class="project_photo" href="#"><img src="./images/neapple.png"></a>
                 </div>
             </div>
             <div class="project_wrapper">
@@ -139,12 +166,12 @@
                     <a class="live_demo" href="#">Live Demo</a><img class="next" src="./images/next.png">
                     <a class="live_demo" href="#">Code</a><img class="next" src="./images/next.png">
                 </div>
-                <div>
+                <div class="project_photo">
                     <a href="#"><img src="./images/newnetflix.png"></a>
                 </div>
             </div>
             <div class="project_wrapper">
-                <div>
+                <div class="project_photo">
                     <a href="#"><img src="./images/newamaz.png"></a>
                 </div>
                 <div>
@@ -160,7 +187,7 @@
 
             </div>
             <div class="project_wrapper">
-                <div>
+                <div class="project_photo">
                     <a href="#"><img src="./images/newamaz.png"></a>
                 </div>
                 <div>
@@ -181,13 +208,11 @@
                     <p>
                         The Evangadi Forum project is a web application built to facilitate community-driven discussions
                         by
-                        allowing users to ask and answer questions on various topics. Developed using HTML, CSS,
-                        JavaScript,
-                        React, and Node.js.</p>
+                        allowing users to ask and answer questions on various topics.</p>
                     <a class="live_demo" href="#">Live Demo</a><img class="next" src="./images/next.png">
                     <a class="live_demo" href="#">Code</a><img class="next" src="./images/next.png">
                 </div>
-                <div>
+                <div class="project_photo">
                     <a href="#"><img src="./images/evaforum.png"></a>
                 </div>
             </div>
@@ -203,14 +228,80 @@
                     <a class="live_demo" href="#">Live Demo</a><img class="next" src="./images/next.png">
                     <a class="live_demo" href="#">Code</a><img class="next" src="./images/next.png">
                 </div>
-                <div>
+                <div class="project_photo">
                     <a href="#"><img src="./images/abegarage.png"></a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- skills section -->
+    <section class="skills_container" id="skills">
+        <h1>My Skills</h1>
+        <div class="skills_wrapper reveal active">
+            <div>
+                <img src="./images/html.png">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/css.png">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/js.png">
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div>
+                <img src="./images/react.png">
+                <h3>React</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/python.png">
+                <h3>Python</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/clogo.png">
+                <h3>C programming</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/newword.png">
+                <h3>WordPress</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/node-js.png">
+                <h3>Node.js</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/sql.png">
+                <h3>SQL</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/business-intelligence.png">
+                <h3>Power Bi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/adobe-photoshop.png">
+                <h3>Photoshop</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <img src="./images/premiere.png">
+                <h3>Premiere Pro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
     <!-- footer section -->
-    <section class="footer_container">
+    <section class="footer_container" id="contact">
         <div class="footer_wrapper">
             <div>
                 <h2>Get in Touch</h2>
@@ -240,7 +331,7 @@
             </div>
             <div class="footer_image">
                 <img src="./images/coding_removed.png">
-                <p>I am here 24/7 waiting for you.</p>
+                <p>Designed and Developed by Yonas Negese M.</p>
             </div>
         </div>
     </section>
